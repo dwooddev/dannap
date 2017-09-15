@@ -1,0 +1,21 @@
+<h1>New Inquiry</h1>
+<%= form_with scope: :inquiry, url: inquiries_path, local: true do |form| %>
+
+    <p>
+    <%= form.label :company %><br>
+    <% form.text_field :company %>
+    </p>
+
+    <p>
+    <%= form.label :name  %><br>
+    <%= form.text_field :name %>
+    </p>
+
+    <p>
+    <%= form.label :text %><br>
+      <%= form.text_field :text%>
+    </p>
+    <p>
+      <%= form.submit %>
+    </p>
+<% end %>
